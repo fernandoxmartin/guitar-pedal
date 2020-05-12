@@ -1,0 +1,36 @@
+.side-nav {
+  height: 100%;
+  width: 100%;
+  background: rgb(172, 80, 80);
+  position: fixed;
+  clip-path: circle(20px at 84% 92.5%);
+  transition: 0.5s ease-out;
+  .side-nav-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+      height: 70%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      list-style-type: none;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+      }
+    }
+  }
+}
+
+.side-nav.open {
+  clip-path: circle(500px at 50% 50%);
+  z-index: 101;
+}

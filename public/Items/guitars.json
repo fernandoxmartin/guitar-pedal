@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "id": 100,
+      "name": "Fender Telecaster - Blackguard Blonde ",
+      "price": 1899.99,
+      "type": "Electric",
+      "img": "/00.png"
+    },
+    {
+      "id": 101,
+      "name": "Fender Stratocaster - Sapphire Blue",
+      "price": 1699.99,
+      "type": "Electric",
+      "img": "/01.webp"
+    },
+    {
+      "id": 102,
+      "name": "Fender Jazzmaster - Surf Green",
+      "price": 1099.99,
+      "type": "Electric",
+      "img": "/02.webp"
+    },
+    {
+      "id": 103,
+      "name": "PRS CE 24 - Amber",
+      "price": 1999.99,
+      "type": "Electric",
+      "img": "/03.webp"
+    },
+    {
+      "id": 104,
+      "name": "PRS Silver Sky - Frost",
+      "price": 2299.99,
+      "type": "Electric",
+      "img": "/04.webp"
+    },
+    {
+      "id": 105,
+      "name": "PRS Custom 24 'Floyd' 10-Top - Faded Whale Blue ",
+      "price": 4299.99,
+      "type": "Electric",
+      "img": "/05.webp"
+    },
+    {
+      "id": 106,
+      "name": "PRS Custom 22 Piezo - Charcoal",
+      "price": 3999.99,
+      "type": "Electric",
+      "img": "/06.webp"
+    },
+    {
+      "id": 107,
+      "name": "ESP E-II Eclipse - Snow White",
+      "price": 1999.99,
+      "type": "Electric",
+      "img": "/07.webp"
+    },
+    {
+      "id": 108,
+      "name": "ESP LTD M-1000 HT - Black Fade",
+      "price": 1099.99,
+      "type": "Electric",
+      "img": "/08.webp"
+    },
+    {
+      "id": 109,
+      "name": "ESP LTD M-1007 Multi-Scale - Black Satin",
+      "price": 1299.99,
+      "type": "Electric",
+      "img": "/09.webp"
+    },
+    {
+      "id": 110,
+      "name": "Martin 00-15M - Natural Mahogany",
+      "price": 1299.99,
+      "type": "Acoustic",
+      "img": "/10.webp"
+    },
+    {
+      "id": 111,
+      "name": "Taylor GS Mini Rosewood - Natural",
+      "price": 549.99,
+      "type": "Acoustic",
+      "img": "/11.webp"
+    }
+  ]
+}

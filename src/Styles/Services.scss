@@ -1,0 +1,66 @@
+.services-container {
+  padding-top: 7.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .services-summary {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 255, 0.5),
+        rgba(255, 0, 0, 0.5)
+      ),
+      url("../Images/services.jpeg") center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 80%;
+    }
+    p {
+      width: 80%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+  .service-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 90%;
+    padding: 20px;
+    .service {
+      height: 100%;
+      width: 100%;
+      background: #eee;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding: 20px;
+      margin: 20px;
+      h2 {
+        padding-bottom: 30px;
+      }
+      p {
+        width: 90%;
+      }
+    }
+  }
+  .service-questions {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+  }
+}

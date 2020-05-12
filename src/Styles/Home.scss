@@ -1,0 +1,79 @@
+.home-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 7.5vh;
+  .banner {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../Images/pic1.jpeg") center;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    img {
+      width: 100%;
+    }
+  }
+  .promo {
+    height: 40vh;
+    width: 100%;
+    .promo-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      margin-top: 50px;
+      .promo-card-container {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 20px;
+        .promo-card {
+          width: 100%;
+          height: 100%;
+          background: #ccc;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          .promo-info {
+            background: red;
+            width: 60%;
+            padding: 10px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .top-products {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    .top-products-container {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      text-align: center;
+      .products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        grid-gap: 20px;
+        padding-top: 50px;
+        img {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
