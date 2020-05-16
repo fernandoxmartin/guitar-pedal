@@ -16,11 +16,12 @@ class Home extends Component {
         </div>
         <div className="promo">
           <div className="promo-container">
-            <h2>Promotions</h2>
             <div className="promo-card-container">
               <div className="promo-card">
                 <div className="promo-info">
-                  <h3>Limited Time | 50% off</h3>
+                  <h4>
+                    Bundle Any Guitar | Pedal and <span>Save 30%</span>
+                  </h4>
                 </div>
               </div>
             </div>

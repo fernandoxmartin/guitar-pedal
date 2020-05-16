@@ -45,7 +45,7 @@ class Services extends Component {
           </div>
         </div>
         <div className="service-questions">
-          <h4>For questions on our services please contact (000) 000 - 0000</h4>
+          <h5>For questions on our services please contact (909) 909 - 9999</h5>
         </div>
       </div>
     );

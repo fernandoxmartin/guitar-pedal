@@ -40,35 +40,35 @@ const Pedals = (props) => {
             value={["Distortion", "Overdrive"]}
             onClick={(e) => filterPedals(e.target.value)}
           >
-            Distortion / OverDrive
+            Distortion <br /> OverDrive
           </button>
           <button
             className="option"
             value={["Reverb", "Delay"]}
             onClick={(e) => filterPedals(e.target.value)}
           >
-            Reverb / Delay
+            Reverb <br /> Delay
           </button>
           <button
             className="option"
             value={["Chorus", "Vibrato"]}
             onClick={(e) => filterPedals(e.target.value)}
           >
-            Chorus / Vibrato
+            Chorus <br /> Vibrato
           </button>
           <button
             className="option"
             value={["Phaser", "Looper"]}
             onClick={(e) => filterPedals(e.target.value)}
           >
-            Phaser / Looper
+            Phaser <br /> Looper
           </button>
           <button
             className="option"
             value={["Compressor", "EQ"]}
             onClick={(e) => filterPedals(e.target.value)}
           >
-            Compressor / EQ
+            Compressor <br /> EQ
           </button>
         </div>
       </div>

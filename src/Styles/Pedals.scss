@@ -31,6 +31,8 @@
       align-items: center;
       justify-content: space-around;
       .option {
+        border: none;
+        background: transparent;
         color: #fff;
         height: 30%;
         width: 20%;
@@ -88,6 +90,7 @@
           color: #fff;
           padding: 10px;
           text-transform: uppercase;
+          border: none;
         }
       }
     }

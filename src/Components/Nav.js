@@ -16,6 +16,7 @@ const Nav = (props) => (
           </Link>
         </div>
         <NavLinks />
+        <h5>Guitar & Pedal</h5>
         <div className="nav-right">
           <ShoppingCartButton
             cartShow={props.cartShow}

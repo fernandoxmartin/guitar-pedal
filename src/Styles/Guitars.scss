@@ -31,6 +31,8 @@
       align-items: center;
       justify-content: space-around;
       .option {
+        border: none;
+        background: transparent;
         color: #fff;
         height: 30%;
         width: 20%;
@@ -81,7 +83,8 @@
         transition: 0.3s ease-out;
         z-index: 0;
         .add-item {
-          background: rgb(22, 22, 22);
+          background: rgb(50, 50, 50);
+          border: none;
           font-size: 0.6rem;
           color: #fff;
           padding: 10px;

@@ -12,18 +12,6 @@ class Support extends Component {
         </div>
         <div className="faq">
           <h2>FAQ</h2>
-          <div className="question">
-            <button>+</button>
-            <h3>Lorem ipsum dolor sit amet..?</h3>
-          </div>
-          <div className="question">
-            <button>+</button>
-            <h3>Lorem ipsum dolor sit amet..?</h3>
-          </div>
-          <div className="question">
-            <button>+</button>
-            <h3>Lorem ipsum dolor sit amet..?</h3>
-          </div>
         </div>
       </div>
     );

@@ -1,10 +1,12 @@
 .side-nav {
   height: 100%;
   width: 100%;
-  background: rgb(172, 80, 80);
+  background: #0f373c;
   position: fixed;
-  clip-path: circle(20px at 84% 92.5%);
+  clip-path: circle(0% at 85% 95%);
+  -webkit-clip-path: circle(0% at 85% 95%);
   transition: 0.5s ease-out;
+  overflow: hidden;
   .side-nav-container {
     height: 100%;
     width: 100%;
@@ -31,6 +33,7 @@
 }
 
 .side-nav.open {
-  clip-path: circle(500px at 50% 50%);
+  clip-path: circle(100% at 50% 50%);
+  -webkit-clip-path: circle(100% at 50% 50%);
   z-index: 101;
 }
