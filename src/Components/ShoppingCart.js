@@ -5,16 +5,14 @@ import "../Styles/ShoppingCart.scss";
 
 const ShoppingCart = (props) => {
   const [items, setItems] = useState([]);
-  const cartItems = useSelector((state) => state.cartReducer);
+  const cartItems = useSelector((state) => state.cartReducer.prod);
   const cartSubTotal = useSelector((state) => state.totalReducer);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     setItems(cartItems);
-    if (items.length > 0) {
-      subTotalPrice();
-    }
+    subTotalPrice();
   }, [cartItems]);
 
   const subTotalPrice = () => {

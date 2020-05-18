@@ -1,10 +1,21 @@
-const cartReducer = (state = [], action) => {
+const initialState = {
+  prod: [],
+  qty: 0,
+};
+
+const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD":
-      return [...state, action.payload];
+      return Object.assign({}, state, {
+        prod: [...state.prod, action.payload],
+        qty: state.qty + 1,
+      });
 
     case "REMOVE":
-      return state.filter((item) => item !== action.payload);
+      return Object.assign({}, state, {
+        prod: state.prod.filter((item) => item.name !== action.payload.name),
+        qty: state.qty - 1,
+      });
 
     default:
       return state;

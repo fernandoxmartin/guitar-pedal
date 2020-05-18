@@ -56,8 +56,10 @@
         }
       }
       .remove-button {
-        width: auto;
-        margin: 0 auto;
+        width: 50%;
+        justify-self: end;
+        background: transparent;
+        border: none;
       }
     }
   }
