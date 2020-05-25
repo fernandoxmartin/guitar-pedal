@@ -27,11 +27,48 @@
     }
   }
   .faq {
-    height: 50vh;
+    height: 100%;
     width: 80%;
     text-align: center;
     h2 {
       padding: 30px;
+    }
+    padding-bottom: 50px;
+    .question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      .arrow {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: transparent;
+        border: none;
+        border-top: 2px solid #000;
+        border-left: 2px solid #000;
+        transform: rotate(-135deg);
+      }
+    }
+    .answer {
+      max-height: 0;
+      min-height: 0;
+      overflow: hidden;
+      transition: 0.2s ease-in-out;
+      p {
+        font-size: 14px;
+        text-align: left;
+      }
+    }
+    .answer-open {
+      max-height: 200px;
+      min-height: 150px;
+      transition: 0.2s ease-in-out;
+      padding: 20px 0px 20px 5px;
+      p {
+        font-size: 14px;
+        text-align: left;
+      }
     }
   }
 }
