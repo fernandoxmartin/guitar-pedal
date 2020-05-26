@@ -18,10 +18,9 @@ const Nav = (props) => (
         <NavLinks />
         <h5>Guitar & Pedal</h5>
         <div className="nav-right">
-          <ShoppingCartButton
-            cartShow={props.cartShow}
-            click={props.cartClickHandler}
-          />
+          <Link to="/cart">
+            <ShoppingCartButton />
+          </Link>
         </div>
       </div>
     </nav>

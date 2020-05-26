@@ -22,9 +22,8 @@ const ShoppingCart = (props) => {
 
   return (
     <div
-      className={
-        props.show ? "shopping-cart-container open" : "shopping-cart-container"
-      }
+      className="shopping-cart-container"
+      style={items.length < 1 ? { height: "100vh" } : { height: "100%" }}
     >
       <div className="summary">
         <h3>Shopping Cart</h3>
@@ -40,20 +39,29 @@ const ShoppingCart = (props) => {
           let imgDir = item.id < 200 ? "guitars" : "pedals";
           return (
             <div className="item" key={item.id}>
-              <img
-                src={require("../Images/" + imgDir + item.img)}
-                alt={item.name}
-              />
+              <h5>{item.name}</h5>
               <div className="item-details">
-                <h5>{item.name}</h5>
-                <p>${item.price}</p>
+                <div className="item-img">
+                  <img
+                    src={require("../Images/" + imgDir + item.img)}
+                    alt={item.name}
+                  />
+                </div>
+
+                <div className="item-price">
+                  <p>${item.price}</p>
+                  <form>
+                    <label>Qty</label>
+                    <input type="number" placeholder="1" />
+                  </form>
+                </div>
+                <button
+                  className="remove-button"
+                  onClick={() => dispatch(removeItem(item))}
+                >
+                  X
+                </button>
               </div>
-              <button
-                className="remove-button"
-                onClick={() => dispatch(removeItem(item))}
-              >
-                X
-              </button>
             </div>
           );
         })}

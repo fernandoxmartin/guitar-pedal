@@ -28,7 +28,7 @@
   }
   .faq {
     height: 100%;
-    width: 80%;
+    width: 85%;
     text-align: center;
     h2 {
       padding: 30px;
@@ -38,7 +38,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-bottom: 10px;
+      padding-bottom: 15px;
+      width: 100%;
+      font-size: 0.8rem;
       .arrow {
         display: block;
         width: 10px;
@@ -48,6 +50,7 @@
         border-top: 2px solid #000;
         border-left: 2px solid #000;
         transform: rotate(-135deg);
+        cursor: pointer;
       }
     }
     .answer {

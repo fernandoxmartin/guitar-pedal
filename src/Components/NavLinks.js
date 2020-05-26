@@ -15,8 +15,8 @@ const NavLinks = () => {
         <Link to="/services">
           <li>Services</li>
         </Link>
-        <Link to="/about">
-          <li>About</li>
+        <Link to="/support">
+          <li>Support</li>
         </Link>
       </ul>
     </div>

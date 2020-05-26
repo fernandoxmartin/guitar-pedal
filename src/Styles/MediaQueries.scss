@@ -1,0 +1,189 @@
+@media (min-width: 1600px) {
+  //-------------------HOME-------------------//
+  .home-container {
+    .banner {
+      height: 50vh;
+      img {
+        width: 40%;
+      }
+    }
+    .promo {
+      height: 35vh;
+      width: 50%;
+      margin: 0 auto;
+    }
+    .top-products {
+      margin: 0 auto;
+      .top-products-container {
+        width: 50%;
+        .products {
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  //-------------------NAV-------------------//
+  nav {
+    .nav-container {
+      .nav-left {
+        width: 10%;
+        img {
+          width: 40%;
+        }
+      }
+      h5 {
+        display: none;
+      }
+    }
+  }
+  .links-container {
+    display: block;
+  }
+  .toggleNav-button {
+    display: none;
+  }
+  .cart-button {
+    img {
+      width: 40%;
+    }
+    &:before {
+      top: 5%;
+    }
+  }
+  //-------------------GUITARS-------------------//
+  .guitar-container {
+    .banner {
+      height: 50vh;
+      img {
+        width: 30%;
+      }
+    }
+    .guitar-option-container {
+      .guitar-options {
+        width: 50%;
+      }
+    }
+    .guitar-list-container {
+      width: 75%;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  //-------------------PEDALS-------------------//
+  .pedal-container {
+    .banner {
+      height: 50vh;
+      img {
+        width: 30%;
+      }
+    }
+    .pedal-option-container {
+      .pedal-options {
+        width: 50%;
+        .option {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .pedal-list-container {
+      width: 75%;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  //-------------------SERVICES-------------------//
+  .services-container {
+    .services-summary {
+      height: 50vh;
+      img {
+        width: 30%;
+      }
+      p {
+        width: 30%;
+      }
+    }
+    .service-card-container {
+      .service {
+        width: 40%;
+        p {
+          width: 90%;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  //-------------------SUPPORT-------------------//
+  .support-container {
+    .support-banner {
+      height: 50vh;
+      img {
+        width: 30%;
+      }
+    }
+    .faq {
+      height: 100%;
+      width: 40%;
+      text-align: center;
+      padding-bottom: 50px;
+      .question {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  //-------------------FOOTER-------------------//
+  footer {
+    .footer-container {
+      width: 60%;
+      height: 100%;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: none;
+      .footer-block {
+        img {
+          width: 100%;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        .social {
+          width: 75%;
+          .icon {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  //-------------------CART-------------------//
+  .shopping-cart-container {
+    padding: 10vh 0 10vh 0;
+    width: 80%;
+    margin: 0 auto;
+    h3 {
+      font-size: 2rem;
+    }
+    .cart-items-container {
+      background: #eee;
+      width: 70%;
+      .item {
+        h5 {
+          font-size: 1.5rem;
+        }
+        .item-details {
+          .item-price {
+            p {
+              font-size: 1.1rem;
+            }
+            form {
+              input {
+                width: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
