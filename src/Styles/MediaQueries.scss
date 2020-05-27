@@ -1,21 +1,15 @@
-@media (min-width: 1600px) {
+@media (min-width: 600px) {
   //-------------------HOME-------------------//
   .home-container {
     .banner {
-      height: 50vh;
       img {
-        width: 40%;
+        width: 70%;
       }
-    }
-    .promo {
-      height: 35vh;
-      width: 50%;
-      margin: 0 auto;
     }
     .top-products {
       margin: 0 auto;
       .top-products-container {
-        width: 50%;
+        width: 90%;
         .products {
           img {
             width: 80%;
@@ -28,9 +22,149 @@
   nav {
     .nav-container {
       .nav-left {
-        width: 10%;
         img {
-          width: 40%;
+          width: 70%;
+        }
+      }
+    }
+  }
+  .cart-button {
+    img {
+      width: 70%;
+    }
+    &:before {
+      top: 0%;
+    }
+  }
+  //-------------------GUITARS-------------------//
+  .guitar-container {
+    .banner {
+      img {
+        width: 60%;
+      }
+    }
+    .guitar-option-container {
+      .guitar-options {
+        width: 70%;
+      }
+    }
+    .guitar-list-container {
+      width: 75%;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  //-------------------PEDALS-------------------//
+  .pedal-container {
+    .banner {
+      img {
+        width: 60%;
+      }
+    }
+    .pedal-option-container {
+      .pedal-options {
+        width: 70%;
+      }
+    }
+    .pedal-list-container {
+      width: 75%;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  //-------------------SERVICES-------------------//
+  .services-container {
+    .services-summary {
+      img {
+        width: 60%;
+      }
+      p {
+        width: 70%;
+      }
+    }
+    .service-card-container {
+      .service {
+        width: 80%;
+        p {
+          width: 90%;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  //-------------------SUPPORT-------------------//
+  .support-container {
+    .support-banner {
+      img {
+        width: 60%;
+      }
+    }
+    .faq {
+      height: 100%;
+      width: 80%;
+      text-align: center;
+      padding-bottom: 50px;
+      .question {
+        font-size: 1rem;
+      }
+    }
+  }
+  //-------------------FOOTER-------------------//
+  footer {
+    .footer-container {
+      .footer-block {
+        img {
+          width: 60%;
+        }
+        .social {
+          width: 50%;
+        }
+      }
+    }
+  }
+  //-------------------CART-------------------//
+  .shopping-cart-container {
+    width: 80%;
+    margin: 0 auto;
+    .cart-items-container {
+      .item {
+        h5 {
+          font-size: 1.1rem;
+        }
+        .item-details {
+          .item-price {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  //-------------------HOME-------------------//
+  .home-container {
+    .banner {
+      img {
+        width: 60%;
+      }
+    }
+    .promo {
+      width: 70%;
+      margin: 0 auto;
+    }
+    .top-products {
+      .top-products-container {
+        width: 65%;
+      }
+    }
+  }
+  //-------------------NAV-------------------//
+  nav {
+    .nav-container {
+      .nav-left {
+        img {
+          width: 50%;
         }
       }
       h5 {
@@ -46,10 +180,139 @@
   }
   .cart-button {
     img {
+      width: 50%;
+    }
+  }
+
+  //-------------------GUITARS-------------------//
+  .guitar-container {
+    .banner {
+      img {
+        width: 50%;
+      }
+    }
+    .guitar-list-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  //-------------------PEDALS-------------------//
+  .pedal-container {
+    .banner {
+      img {
+        width: 50%;
+      }
+    }
+    .pedal-option-container {
+      .pedal-options {
+        .option {
+          font-size: 0.75rem;
+        }
+      }
+    }
+    .pedal-list-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  //-------------------SERVICES-------------------//
+  .services-container {
+    .services-summary {
+      img {
+        width: 50%;
+      }
+    }
+  }
+  //-------------------SUPPORT-------------------//
+  .support-container {
+    .support-banner {
+      img {
+        width: 50%;
+      }
+    }
+    .faq {
+      width: 60%;
+    }
+  }
+  //-------------------FOOTER-------------------//
+  footer {
+    .footer-container {
+      width: 80%;
+      height: 100%;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: none;
+      .footer-block {
+        img {
+          width: 100%;
+        }
+        h3 {
+          font-size: 1.1rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+        .social {
+          width: 75%;
+          .icon {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  //-------------------CART-------------------//
+  .shopping-cart-container {
+    width: 80%;
+    margin: 0 auto;
+    .cart-items-container {
+      .item {
+        h5 {
+          font-size: 1.1rem;
+        }
+        .item-details {
+          .item-price {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  //-------------------HOME-------------------//
+  .home-container {
+    .banner {
+      height: 50vh;
+      img {
+        width: 40%;
+      }
+    }
+    .promo {
+      width: 60%;
+    }
+    .top-products {
+      .top-products-container {
+        width: 70%;
+      }
+    }
+  }
+  //-------------------NAV-------------------//
+  nav {
+    .nav-container {
+      .nav-left {
+        img {
+          width: 40%;
+        }
+      }
+    }
+  }
+  .cart-button {
+    img {
       width: 40%;
     }
     &:before {
-      top: 5%;
+      top: 0%;
     }
   }
   //-------------------GUITARS-------------------//
@@ -57,17 +320,16 @@
     .banner {
       height: 50vh;
       img {
-        width: 30%;
+        width: 40%;
       }
     }
     .guitar-option-container {
       .guitar-options {
-        width: 50%;
+        width: 40%;
       }
     }
     .guitar-list-container {
-      width: 75%;
-      grid-template-columns: repeat(4, 1fr);
+      width: 80%;
     }
   }
   //-------------------PEDALS-------------------//
@@ -75,20 +337,16 @@
     .banner {
       height: 50vh;
       img {
-        width: 30%;
+        width: 40%;
       }
     }
     .pedal-option-container {
       .pedal-options {
         width: 50%;
-        .option {
-          font-size: 0.8rem;
-        }
       }
     }
     .pedal-list-container {
-      width: 75%;
-      grid-template-columns: repeat(4, 1fr);
+      width: 80%;
     }
   }
   //-------------------SERVICES-------------------//
@@ -96,10 +354,10 @@
     .services-summary {
       height: 50vh;
       img {
-        width: 30%;
+        width: 40%;
       }
       p {
-        width: 30%;
+        width: 40%;
       }
     }
     .service-card-container {
@@ -117,7 +375,7 @@
     .support-banner {
       height: 50vh;
       img {
-        width: 30%;
+        width: 40%;
       }
     }
     .faq {
@@ -133,14 +391,8 @@
   //-------------------FOOTER-------------------//
   footer {
     .footer-container {
-      width: 60%;
-      height: 100%;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: none;
+      width: 80%;
       .footer-block {
-        img {
-          width: 100%;
-        }
         h3 {
           font-size: 1.5rem;
         }
@@ -184,6 +436,83 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  //-------------------HOME-------------------//
+  .home-container {
+    .banner {
+      img {
+        width: 30%;
+      }
+    }
+    .top-products {
+      .top-products-container {
+        width: 55%;
+        .products {
+          img {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+  //-------------------NAV-------------------//
+  nav {
+    .nav-container {
+      .nav-left {
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+  .cart-button {
+    img {
+      width: 30%;
+    }
+  }
+  //-------------------GUITARS-------------------//
+  .guitar-container {
+    .banner {
+      img {
+        width: 20%;
+      }
+    }
+  }
+  //-------------------PEDALS-------------------//
+  .pedal-container {
+    .banner {
+      img {
+        width: 20%;
+      }
+    }
+  }
+  //-------------------SERVICES-------------------//
+  .services-container {
+    .services-summary {
+      img {
+        width: 20%;
+      }
+      p {
+        width: 30%;
+      }
+    }
+  }
+  //-------------------SUPPORT-------------------//
+  .support-container {
+    .support-banner {
+      img {
+        width: 20%;
+      }
+    }
+  }
+  //-------------------FOOTER-------------------//
+  footer {
+    .footer-container {
+      width: 60%;
     }
   }
 }
