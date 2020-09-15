@@ -5,84 +5,96 @@
       "name": "Fender Telecaster - Blackguard Blonde ",
       "price": 1899.99,
       "type": "Electric",
-      "img": "/00.png"
+      "img": "/00.png",
+      "sold": 30
     },
     {
       "id": 101,
       "name": "Fender Stratocaster - Sapphire Blue",
       "price": 1699.99,
       "type": "Electric",
-      "img": "/01.webp"
+      "img": "/01.webp",
+      "sold": 5
     },
     {
       "id": 102,
       "name": "Fender Jazzmaster - Surf Green",
       "price": 1099.99,
       "type": "Electric",
-      "img": "/02.webp"
+      "img": "/02.webp",
+      "sold": 20
     },
     {
       "id": 103,
       "name": "PRS CE 24 - Amber",
       "price": 1999.99,
       "type": "Electric",
-      "img": "/03.webp"
+      "img": "/03.webp",
+      "sold": 5
     },
     {
       "id": 104,
       "name": "PRS Silver Sky - Frost",
       "price": 2299.99,
       "type": "Electric",
-      "img": "/04.webp"
+      "img": "/04.webp",
+      "sold": 5
     },
     {
       "id": 105,
       "name": "PRS Custom 24 'Floyd' 10-Top - Faded Whale Blue ",
       "price": 4299.99,
       "type": "Electric",
-      "img": "/05.webp"
+      "img": "/05.webp",
+      "sold": 5
     },
     {
       "id": 106,
       "name": "PRS Custom 22 Piezo - Charcoal",
       "price": 3999.99,
       "type": "Electric",
-      "img": "/06.webp"
+      "img": "/06.webp",
+      "sold": 5
     },
     {
       "id": 107,
       "name": "ESP E-II Eclipse - Snow White",
       "price": 1999.99,
       "type": "Electric",
-      "img": "/07.webp"
+      "img": "/07.webp",
+      "sold": 10
     },
     {
       "id": 108,
       "name": "ESP LTD M-1000 HT - Black Fade",
       "price": 1099.99,
       "type": "Electric",
-      "img": "/08.webp"
+      "img": "/08.webp",
+      "sold": 28
     },
     {
       "id": 109,
       "name": "ESP LTD M-1007 Multi-Scale - Black Satin",
       "price": 1299.99,
       "type": "Electric",
-      "img": "/09.webp"
+      "img": "/09.webp",
+      "sold": 5
     },
     {
       "id": 110,
       "name": "Martin 00-15M - Natural Mahogany",
       "price": 1299.99,
       "type": "Acoustic",
-      "img": "/10.webp"
+      "img": "/10.webp",
+      "sold": 11
     },
     {
       "id": 111,
       "name": "Taylor GS Mini Rosewood - Natural",
       "price": 549.99,
       "type": "Acoustic",
-      "img": "/11.webp"
+      "img": "/11.webp",
+      "sold": 5
     }
   ]
 }

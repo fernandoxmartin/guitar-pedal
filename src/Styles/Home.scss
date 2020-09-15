@@ -3,93 +3,129 @@
   height: 100%;
   padding-top: 7.5vh;
   .banner {
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url("../Images/pic1.jpeg") center;
     background-size: cover;
     height: 40vh;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.8rem;
+    text-align: center;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    h1 {
+      background: linear-gradient(
+        to right,
+        (
+          rgba(0, 0, 255, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 50%,
+          rgba(255, 0, 0, 0.5) 100%
+        )
+      );
+    }
     img {
-      width: 100%;
+      width: 80%;
     }
   }
-  .promo {
-    height: 35vh;
+
+  .promo-container {
+    height: 15vh;
     width: 100%;
-    .promo-container {
-      width: 100%;
-      height: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0);
+    .promo {
+      position: absolute;
+      height: 15vh;
+      width: 95%;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
-      margin: 0 auto;
-      .promo-card-container {
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        padding: 20px;
-        .promo-card {
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(
-              45deg,
-              rgba(0, 0, 0, 0.8),
-              rgba(0, 0, 0, 0.2)
-            ),
-            url("../Images/promo.jpg") center no-repeat;
-          background-size: cover;
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          align-items: center;
-          .promo-info {
-            background: #973526;
-            width: 60%;
-            padding: 10px;
-            color: rgb(221, 221, 221);
-            span {
-              color: #ff9494;
-            }
-          }
+      justify-content: space-between;
+      font-size: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .promo-left {
+      background: linear-gradient(to right, rgb(0, 0, 0), rgb(23, 77, 179));
+      clip-path: polygon(0 0, 53% 0, 46% 100%, 0 100%);
+      color: rgb(187, 199, 255);
+      padding-left: 20px;
+      h1 {
+        &:nth-child(2) {
+          color: rgb(57, 82, 196);
         }
+      }
+      .promo-img {
+        height: 100%;
+        width: 60%;
+        background: linear-gradient(
+            to left,
+            rgba(0, 0, 255, 0.5),
+            rgba(255, 0, 0, 0)
+          ),
+          url(../Images/new.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    .promo-right {
+      background: linear-gradient(to right, rgb(192, 22, 22), rgb(0, 0, 0));
+      clip-path: polygon(54% 0, 100% 0, 100% 100%, 47% 100%);
+      color: rgb(255, 187, 187);
+      justify-content: flex-end;
+      padding-right: 20px;
+      h1 {
+        text-align: end;
+        &:nth-child(2) {
+          color: rgb(196, 57, 57);
+        }
+      }
+      .promo-img {
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            to right,
+            rgba(255, 0, 0, 0.3),
+            rgba(255, 0, 0, 0)
+          ),
+          url(../Images/deals.png) no-repeat;
+        background-size: contain;
       }
     }
   }
-  .top-products {
-    width: 100%;
+  .home-service-container {
+    width: 95%;
     height: 100%;
-    padding: 30px 0px 60px 0px;
-    .top-products-container {
-      width: 85%;
+    margin: 0 auto;
+    .home-services {
+      background: linear-gradient(to bottom, rgb(20, 20, 20), rgb(50, 50, 50));
       height: 100%;
-      margin: 0 auto;
-      h2 {
-        position: relative;
-        &:after {
-          content: "";
-          position: absolute;
-          border-bottom: 1px solid rgb(44, 44, 44);
-          width: 55%;
-          top: 50%;
-          left: 45%;
-        }
-      }
-      .products {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .service-card {
+        color: rgb(196, 57, 57);
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        grid-gap: 20px;
-        padding-top: 50px;
-        img {
-          width: 100%;
-          margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        margin: 20px;
+        span {
+          color: #fff;
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+        .service-icon {
+          color: #ffffff;
+          font-size: 20px;
+          margin-bottom: 10px;
         }
       }
     }

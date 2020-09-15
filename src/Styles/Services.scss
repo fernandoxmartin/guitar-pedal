@@ -3,13 +3,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin: 0 auto;
   .services-summary {
     height: 40vh;
     width: 100%;
     background: linear-gradient(
         to right,
-        rgba(0, 0, 255, 0.5),
-        rgba(255, 0, 0, 0.5)
+        (
+          rgba(0, 0, 255, 0.5) 0%,
+          rgba(0, 0, 0, 0.7) 50%,
+          rgba(255, 0, 0, 0.5) 100%
+        )
       ),
       url("../Images/services.jpeg") center;
     background-size: cover;
@@ -33,7 +38,7 @@
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    width: 90%;
+    width: 100%;
     padding: 20px;
     .service {
       height: 100%;

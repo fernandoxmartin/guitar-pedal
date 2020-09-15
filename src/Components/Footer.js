@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../Styles/Footer.scss";
-import logo from "../Images/logo.png";
+import logo from "../Images/logo-gp-black.png";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";

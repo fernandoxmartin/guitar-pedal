@@ -1,37 +1,75 @@
 import React, { Component } from "react";
 import "../Styles/Home.scss";
-import guit1 from "../Images/guitars/00.webp";
-import guit2 from "../Images/guitars/07.webp";
-import guit3 from "../Images/guitars/08.webp";
-import guit4 from "../Images/guitars/09.webp";
-import ped1 from "../Images/pedals/01.webp";
-import ped2 from "../Images/pedals/02.webp";
-import ped3 from "../Images/pedals/05.webp";
-import ped4 from "../Images/pedals/03.webp";
-import gp from "../Images/logo-white.png";
+import BestSellers from "../Components/BestSellers";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import logo from "../Images/logo-gp-white.png";
+library.add(fas);
 
 class Home extends Component {
   render() {
     return (
       <div className="home-container">
         <div className="banner">
-          <img src={gp} alt="banner" />
-          <h2>Explore your creativity</h2>
+          <img src={logo} alt="logo" />
+          <h1>explore your creativity</h1>
         </div>
-        <div className="promo">
-          <div className="promo-container">
-            <div className="promo-card-container">
-              <div className="promo-card">
-                <div className="promo-info">
-                  <h4>
-                    Bundle Any Guitar | Pedal Combo and <span>Save 30%</span>
-                  </h4>
-                </div>
-              </div>
+
+        <div className="promo-container">
+          <div className="promo promo-left">
+            <div className="promo-text">
+              <h1>New</h1>
+              <h1>Arrivals</h1>
+            </div>
+            <div className="promo-img"></div>
+          </div>
+          <div className="promo promo-right">
+            <div className="promo-img"></div>
+            <div className="promo-text">
+              <h1>Weekly</h1>
+              <h1>Deals</h1>
             </div>
           </div>
         </div>
-        <div className="top-products">
+        <div className="home-service-container">
+          <div className="home-services">
+            <div className="service-card">
+              <FontAwesomeIcon
+                className="service-icon"
+                icon={["fas", "shipping-fast"]}
+              />
+              FREE SHIPPING
+              <span>all orders</span>
+            </div>
+            <div className="service-card">
+              <FontAwesomeIcon
+                className="service-icon"
+                icon={["fas", "tags"]}
+              />
+              LOWEST PRICES
+              <span>price match guarenteed</span>
+            </div>
+            <div className="service-card">
+              <FontAwesomeIcon
+                className="service-icon"
+                icon={["fas", "undo"]}
+              />
+              30-DAY RETURNS
+              <span>hassle free</span>
+            </div>
+            <div className="service-card">
+              <FontAwesomeIcon
+                className="service-icon"
+                icon={["fas", "credit-card"]}
+              />
+              FINANCE
+              <span>easy payments</span>
+            </div>
+          </div>
+        </div>
+        <BestSellers />
+        {/* <div className="top-products">
           <div className="top-products-container">
             <h2>Top Guitars</h2>
             <div className="products">
@@ -39,6 +77,7 @@ class Home extends Component {
               <img src={guit2} alt="guitar" />
               <img src={guit3} alt="guitar" />
               <img src={guit4} alt="guitar" />
+              <img src={guit5} alt="guitar" />
             </div>
           </div>
         </div>
@@ -52,7 +91,7 @@ class Home extends Component {
               <img src={ped4} alt="pedal" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

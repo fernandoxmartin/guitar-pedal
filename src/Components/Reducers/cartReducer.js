@@ -17,6 +17,9 @@ const cartReducer = (state = initialState, action) => {
         qty: state.qty - 1,
       });
 
+    case "REMOVE_ALL":
+      return initialState;
+
     default:
       return state;
   }
